@@ -56,7 +56,11 @@
             movieDiv.append( $("<h3>Title: " + response.Title + "</h3>") );
             movieDiv.append( $("<h4>Rating: " + response.Rated + "</h4>") );
             movieDiv.append( $("<h4>Year: " + response.Year + "</h4>") );
+            movieDiv.append( $("<h4>Genre: " + response.Genre + "</h4>") );            
             movieDiv.append( $("<h4>Plot: " + response.Plot + "</h4>") );
+            movieDiv.append( $("<h4>Cast: " + response.Actors + "</h4>") );
+            movieDiv.append( $("<h4>Directed By: " + response.Director + "</h4>") );
+            movieDiv.append( $("<h4>Awarded: " + response.Awards + "</h4>") );
             movieDiv.append( $("<img src=" + response.Poster + " />") );
             $("#movies-view").prepend(movieDiv);
 
